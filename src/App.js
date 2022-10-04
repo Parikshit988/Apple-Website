@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import {
   BrowserRouter as Router,
   Route,
@@ -17,7 +18,7 @@ import Pages from './component/Pages'
 function App() {
   return (
     <Router>
-    <>
+    <div className='app-container'>
       
      <Navbar />
      <Routes>
@@ -29,7 +30,7 @@ function App() {
            <Route path= '/pages' element={<Pages />} />
            
      </Routes>
-     </>
+     </div>
     </Router>
   );
 }
